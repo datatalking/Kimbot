@@ -1,17 +1,12 @@
 # [[user@]host1:]file1 ... [[user@]host2:]file2
 # file1 ... [[user@]host2:]file2
-
 # secure copy of my file to upload
-
 '''
-
 scp -i MyKeyFile.pem FileToUpload.pdf ubuntu@ec2-123-123-123-123.compute-1.amazonaws.com:FileToUpload.pdf
 connect to the virtual machine 
 ssh -i "kimbot1.pem" ec2-user@ec2-52-201-215-131.compute-1.amazonaws.com
 scp -i ~/AWS/kimbot1.pem KimBot.py ec2-user@ec2-52-201-215-131.compute-1.amazonaws.com:KimBot.py
-
 '''
-
 # project description
 # Superhero's helping to make the drive more fun
 
@@ -19,13 +14,38 @@ scp -i ~/AWS/kimbot1.pem KimBot.py ec2-user@ec2-52-201-215-131.compute-1.amazona
 # copy similar @erowidrecruiter as pulling data from drug trip users with HR posts
 # go find tweets by(WSDOT) pull responding people or and traffic condition to with superheros and food.
 ##################################################################################################
+
+#{'TrafficAvengers'}
+#Pause.sleep(3)
+
+#Def Who(
+    #print[randomly choose from[intro]]
+
+#def intro
+#  print ("Pick a number any number" "1, 2, 3, 4, 5, 6, 7")
+#  (1)["TA is for people would would like to make traffic more fun and interesting"]
+#  (2)["What - TA is a Markov mashup of your local traffic tweets and the Superhero Solving problems"]
+#  (3)["Where - TA is currently available for 14 Department of Transportataion DOT, twitter tweets."]
+#  (4)["we will soon service 31 states."]
+#  (5)["When - TA will launch a walking beta in January 2017"]
+#  (6)["Why - TA will make traffic fun again"]
+#  (7)["How - Mapping one of seven different Avengers to provide ways they would solve the traffic issues."])
+
+#print ("We will soon code those issues as status.)
+
+#print ("before we begin may I have your name")
+#  input = name = "Is this your first name or your last name"
+#    print First name, Last name
+
 import tweepy
 import yaml
 import datetime
 import random
 import re
 import pdb
-import StateDOT
+import time
+
+#import StateDOT
 # v1    import Kim_Phrases - first ideal
 # v1.1  import kim_phrases and mash with einstein quotes - started 091116
 # v2    import dot traffic tweets and add superheros - launched 091216
@@ -51,7 +71,7 @@ def kimbot_setup():
 def kimbot_auth():
   pass
 
-def Kimbot_select():
+def kimbot_select():
   pass
 
 def kimbot_tupl():
@@ -74,7 +94,7 @@ auth.secure = True
 # read in ACCESS_TOKEN and ACCESS_SECRET variables to tweepy
 auth.set_access_token(secret["ACCESS_TOKEN"], secret["ACCESS_SECRET"])
 
-#tweet_text = 
+#tweet_text =
 # Construct the API instance
 API = tweepy.API(auth)
 try:
@@ -87,7 +107,7 @@ except tweepy.TweepError:
 #    print tweet.text
 
 #pulling tweets
-DOTtweets = API.user_timeline("WSDOT")
+DOTtweets = API.user_timeline("WSDOT") # ['https://twitter.com/'] caltransd2 % d is state 
 
 
 # add other dot twitter accounts wsdot_traffic
@@ -98,7 +118,7 @@ def new_random_tweet(user):
     tweet_text = random.choice(DOTtweets).text
     return tweet_text
 
-tweet_text = new_random_tweet("WSDOTd")
+tweet_text = new_random_tweet("WSDOT")
 
 # add list in another file of all the states that have t
 
@@ -109,7 +129,7 @@ tweet_text = new_random_tweet("WSDOTd")
 
 #who is responding as superhero
 replacement_tuples = ( # read in first value and replace it with second
-    ('police', 'Ironman'),
+    ('police', 'Ironman'), #add in a photo of them this in the code.
     ('Law Enforcement', 'Ironman'),
     ('medics', 'Hulk'),
     ('first responders', 'Blackwidow'),
@@ -117,7 +137,7 @@ replacement_tuples = ( # read in first value and replace it with second
     ('sherrif', 'Spiderman'),
     ('fire fighters', 'Captain America'),
     ('Fire Department', 'Captain America'),
-    ('ambulance', 'Dr Strange'),
+    ('Ambulance', 'Dr Strange'),
     ('state patrol', 'Nick Fury'),
     ('dot', 'Thor'),
     ('tow trucks', 'WarMachine'),
@@ -137,15 +157,21 @@ replacement_tuples = ( # read in first value and replace it with second
     ('2 lanes', 'tomato-soup'),
     ('two lanes', 'tomato-soup'),
     ('closure', 'cranberry'),
+    ('drive', 'destruction'),
     ('driver', 'djion-mustard'),
     ('road_rage', 'spicey-tamale'),
     ('blocked', 'blueberry'),
     ('closed', 'cornmeal'),
-    ('roadway', 'corn cob'),
+    ('roadway', 'rainbow'),
     ('service', 'salami'),
     ('construction', 'cashews'),
-    ('delay', 'demise'),
-    ('stops', 'salsa'), #added from dash tweet 10-18-16, need to find an "def element" ML? that will incorporate terms to build on its own. if replace word returns growth in tweets then keep, otherwise replace with different term.
+    ('delay', 'de fishes'),
+    ('stops', 'pots'),
+    ('snow', 'salsa'),
+    ('rain', 'sprinkles'),
+    ('traction tires', 'tractor beams'),
+    ('Use alt routes', 'telepathicly commute'),
+    ('mountain pass', 'monster pass') #added from dash tweet 10-18-16, need to find an "def element" ML? that will incorporate terms to build on its own. if replace word returns growth in tweets then keep, otherwise replace with different term.
 )
 ##################################################################################################
 # words to replace, old word with new word
@@ -166,12 +192,27 @@ while tweet_has_word == False: # when the tweet world compared to False
             #replace the word
     if tweet_has_word == False:
         tweet_text = new_random_tweet("WSDOT")
-
-        #pdb.set_trace()
+        #pdb.set_tracetweepy.error.TweepError: [{u'message': u'Status is a duplicate.', u'code': 187}]
 print newtweet_text
 ##################################################################################################
 API.update_status(status=newtweet_text)
 
+time.sleep(5)
+
+#start()
+
+#create routine for "tweepy.error.TweepError: [{u'message': u'Status is a duplicate.', u'code': 187}]"
+  #if error happsns, cycle through and find another error. or put up a funny movie quote instead
+
+#time.sleep(5)
+
+# if len(newtweet_text) < 140 char
+  # 140-len(char)=(balance)
+    #if balance >= 5 then 5comment
+    #if balance >= 10 then 10comment
+    #if balance >= n then ncomment
+
+'''
 while True:
     print "This prints once a minute."
     time.sleep(60) # update the API as replacement_tuples replaces tweet_text value
@@ -180,7 +221,7 @@ while True:
 
 # TODO we have a slowdown on the 405 = we have a (50(random 10,20,30,40) (weight, pound, oz, ton) chicken burrito) [monday=chicken, tuesday=beef, wednesday=pulled pork, thursday=tofu, friday=fish, saturday=salad, sunday=??????]
 
-'''
+
 
 #####
  1. Create a twitter account for your chatbot
