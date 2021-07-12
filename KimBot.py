@@ -1,12 +1,14 @@
 # [[user@]host1:]file1 ... [[user@]host2:]file2
 # file1 ... [[user@]host2:]file2
 # secure copy of my file to upload
+
 '''
 scp -i MyKeyFile.pem FileToUpload.pdf ubuntu@ec2-123-123-123-123.compute-1.amazonaws.com:FileToUpload.pdf
 connect to the virtual machine 
 ssh -i "kimbot1.pem" ec2-user@ec2-52-201-215-131.compute-1.amazonaws.com
 scp -i ~/AWS/kimbot1.pem KimBot.py ec2-user@ec2-52-201-215-131.compute-1.amazonaws.com:KimBot.py
 '''
+
 # project description
 # Superhero's helping to make the drive more fun
 
@@ -49,7 +51,7 @@ import time
 # v1    import Kim_Phrases - first ideal
 # v1.1  import kim_phrases and mash with einstein quotes - started 091116
 # v2    import dot traffic tweets and add superheros - launched 091216
-# v3    import traffic qutoes, mesh with something kitchy cool. startup quotes change name to
+# v3    import traffic quotes, mesh with something kitschy cool. startup quotes change name to
         # startuptraffic. it would be localized to the city of the traffic. Change graphic to office like eroidrecruiter.
         # https://www.reddit.com/r/startups/ and a markov program with a 140 character state
 
@@ -59,7 +61,7 @@ import time
 # the last letter is the letter to be replaced... should this be with a %d
 # so code is (link... char=%d) %d = ()
 
-# tweet_text = origional tweet_text
+# tweet_text = original tweet_text
 # replacement_tuples = words replace
 # read secret yml variables into kimbot.py
 # add AWS one tweet a day to check AWS limits then go up to three to four per day.
@@ -134,7 +136,7 @@ replacement_tuples = ( # read in first value and replace it with second
     ('medics', 'Hulk'),
     ('first responders', 'Blackwidow'),
     ('medivac', 'Hawkeye'),
-    ('sherrif', 'Spiderman'),
+    ('sheriff', 'Spiderman'),
     ('fire fighters', 'Captain America'),
     ('Fire Department', 'Captain America'),
     ('Ambulance', 'Dr Strange'),
@@ -150,7 +152,7 @@ replacement_tuples = ( # read in first value and replace it with second
     ('collision', 'chimichanga'),
     ('traffic', 'tunamelt'),
     ('right lane', 'rice-noodles'),
-    ('left lane', 'lambchops'),
+    ('left lane', 'lamb-chops'),
     ('center lane', 'corn-tortilla'),
     ('one lane', 'olive-oil'),
     ('1 lane', 'olive-oil'),
@@ -170,9 +172,11 @@ replacement_tuples = ( # read in first value and replace it with second
     ('snow', 'salsa'),
     ('rain', 'sprinkles'),
     ('traction tires', 'tractor beams'),
-    ('Use alt routes', 'telepathicly commute'),
+    ('Use alt routes', 'telepathically commute'),
     ('mountain pass', 'monster pass') #added from dash tweet 10-18-16, need to find an "def element" ML? that will incorporate terms to build on its own. if replace word returns growth in tweets then keep, otherwise replace with different term.
 )
+
+
 ##################################################################################################
 # words to replace, old word with new word
 replacement_words = {}
@@ -194,6 +198,7 @@ while tweet_has_word == False: # when the tweet world compared to False
         tweet_text = new_random_tweet("WSDOT")
         #pdb.set_tracetweepy.error.TweepError: [{u'message': u'Status is a duplicate.', u'code': 187}]
 print newtweet_text
+
 ##################################################################################################
 API.update_status(status=newtweet_text)
 
