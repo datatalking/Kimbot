@@ -2,7 +2,7 @@
 
 A Seattle Department of Transportation (DOT) Twitter chatbot project that makes traffic tweets fun.
 
-The Let’s Make (Twitter) Friends in Seattlehackathon was hosted by a Institute for Systems Biology.
+The Let’s Make (Twitter) Friends in Seattle hackathon was hosted by a Institute for Systems Biology.
 
 Most if not all DOT traffic updates are boring and frequently a one-way communication so lacking any user engagement 
 long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.mashable.com/tech/24506/twitter-api-changes-crush-possumeveryhour-and-other-good-bots#:~:text=Twitter%27s%20API%20used%20to%20be,switching%20to%20a%20paid%20one.).
@@ -19,6 +19,13 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
+
+<img src="images/Twitter-Vigilance-Architecture.png"/>
+
+
+https://s3-us-west-2.amazonaws.com/justindevelopspublic/aws-puppy-20160910.pdf
+tinyurl.com/j8d53vs
+@Justin_Devs
 
 
 ## General Information
@@ -51,6 +58,9 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
 - Pycharm
 - 2013 MacBookPro 16 MB of ram, 1TB HDD
 - Three days of coding
+<img src="images/Screen-Shot-2023-09-07-043921.png"/>
+
+
 
 
 ## Features
@@ -62,7 +72,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](/images/Screen Shot 2023-09-07 at 4.39.21 PM.png)
+![Example screenshot](/images/Screen-Shot-2023-09-07-043921.png)
 
 
 ## Setup
@@ -77,10 +87,6 @@ List the ready features here:
 3. Setup your own AWS instance and enable access from your IP address
 4. This codebase was designed for MacOS and Linux
 
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
 
 ## Usage
 1. You will need to enter your Twitter API key in your own .env file at root
@@ -94,14 +100,14 @@ has deprecated use of their free API.
 Our shared idea was expanded upon in a [2018 Paper](https://www.researchgatenet/publication/317977462_Predicting_TV_programme_audience_by_using_twitter_based_metrics) that was trained 
 using crawled data 
 from television programs
-[<img src="images/v2/Twitter_Kimbot/Twitter-Vigilance-Architecture.png"/>]()
+[<img src="Kimbot/images/Twitter-Vigilance-Architecture.png"/>](Twitter-Vigilance-Architecture.png)
 
-[<img src="images/v2/Twitter_Kimbot/Twitter-Vigilance-Architecture.png" width="250"/>](Twitter-Vigilance-Architecture.png)
+[<img src="Kimbot/images/Twitter-Vigilance-Architecture.png" width="250"/>](Twitter-Vigilance-Architecture.png)
 
 What started as an chatbot that would imitate Kim Kardashian stalled out as 82% of her conversation were hair, 
 clothes and her butt which were not interesting. 
 
-<img src="images/Screen Shot 2023-09-07 at 4.39.01 PM.png"/>
+<img src="images/Screen-Shot-2023-09-07-043901.png"/>
 
 Since my goal was to both challenge my coding skills with a cool 
 concept and to win the Hackathon I had to ask the organizers for advice and collaborate with my team. So over the 

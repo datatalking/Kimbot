@@ -52,7 +52,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](/images/Screen Shot 2023-09-07 at 4.39.21 PM.png)
+![Example screenshot](/images/Screen-Shot-2023-09-07-043921.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
