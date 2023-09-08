@@ -58,9 +58,6 @@ tinyurl.com/j8d53vs
 - Pycharm
 - 2013 MacBookPro 16 MB of ram, 1TB HDD
 - Three days of coding
-<img src="images/Screen-Shot-2023-09-07-043921.png"/>
-
-
 
 
 ## Features
@@ -72,7 +69,9 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](/images/Screen-Shot-2023-09-07-043921.png)
+![Beginning screenshot](/images/Screen-Shot-2023-09-07-043901.png)
+
+![Ending Proof Of Concept screenshot](/images/Screen-Shot-2023-09-07-043921.png)
 
 
 ## Setup
