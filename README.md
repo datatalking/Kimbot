@@ -8,11 +8,7 @@ Most if not all DOT traffic updates are boring and frequently a one-way communic
 long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.mashable.com/tech/24506/twitter-api-changes-crush-possumeveryhour-and-other-good-bots#:~:text=Twitter%27s%20API%20used%20to%20be,switching%20to%20a%20paid%20one.).
 
 ## Table of Contents
-<<<<<<< HEAD
 * [General Info](##general-information)
-=======
-* [General Info](#general-information)
->>>>>>> origin/master
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
@@ -21,12 +17,9 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
-<<<<<<< HEAD
 * [Contact](##contact)
-=======
 * [Contact](#contact)
->>>>>>> origin/master
-<!-- * [License](#license) -->
+
 
 
 ## General Information
@@ -38,13 +31,12 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
 - Our purpose was to find a way to customize boring DOT posts in context of each user preference
 - We wanted to show you don't need millions of dollars and dozens of people to rebuild a tool or customize social 
   media experiences
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
 
 
 ## Technologies Used
 - Twitter API - 2016 version
 - AWS EC2 instance
-<<<<<<< HEAD
 - [tweepy](https://github.com/tweepy/tweepy.github.com) - A python package to scan, sort or ingest tweets.
 [![PyPI Version](https://img.shields.io/pypi/v/tweepy?label=PyPI)](https://pypi.org/project/tweepy/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/tweepy?label=Python)](https://pypi.org/project/tweepy/)
@@ -54,10 +46,9 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
   [![Test Status](https://github.com/tweepy/tweepy/workflows/Test/badge.svg)](https://github.com/tweepy/tweepy/actions?query=workflow%3ATest)
   [![Coverage Status](https://img.shields.io/coveralls/tweepy/tweepy/master.svg?style=flat)](https://coveralls.io/github/tweepy/tweepy?branch=master)
   
-=======
+
 - [tweepy](https://github.com/tweepy/tweepy.github.com) - A python package to scan, sort or ingest tweets with 
   ratelimits.
->>>>>>> origin/master
 - Python 2.7
 - Pycharm
 - 2013 MacBookPro 16 MB of ram, 1TB HDD
@@ -66,11 +57,8 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
 
 ## Features
 List the ready features here:
-<<<<<<< HEAD
 - 13 different replacement tuples
-=======
 - 13 different replacement options
->>>>>>> origin/master
 - Seattle Zip code as standard DOT tweets
 - Option for frequency of tweet - in process
 
@@ -80,7 +68,6 @@ List the ready features here:
 
 
 ## Setup
-<<<<<<< HEAD
 1. From your terminal run `pip install -r requirements.txt`
 2. Once installed find any other environment variables and load those
 3. I use anaconda for all my Python package handling.
@@ -91,7 +78,7 @@ List the ready features here:
 2. You will need to enter your Twitter API key in your own .env file at root
 3. Setup your own AWS instance and enable access from your IP address
 4. This codebase was designed for MacOS and Linux
-=======
+
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
 Proceed to describe how to install / setup one's local environment / get started with the project.
@@ -100,8 +87,6 @@ Proceed to describe how to install / setup one's local environment / get started
 ## Usage
 1. You will need to enter your Twitter API key in your own .env file at root
 2. Setup your own AWS instance and enable access from your IP
-3. 
->>>>>>> origin/master
 
 
 ## Project Status
@@ -117,10 +102,7 @@ What started as an chatbot that would imitate Kim Kardashian stalled out as 82% 
 clothes and her butt which were not interesting. 
 
 <img src="images/Screen Shot 2023-09-07 at 4.39.01 PM.png"/>
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 Since my goal was to both challenge my coding skills with a cool 
 concept and to win the Hackathon I had to ask the organizers for advice and collaborate with my team. So over the 
 weekend we evolved this 
@@ -131,12 +113,8 @@ inspired chatbot
 trained and hosted on AWS EC2 micro 
 instance using publicly available Twitter training data from Silicon Valley and Tweets from Startups and 
 @marvelavengers accounts to make traffic alerts more fun.
-
-<<<<<<< HEAD
 <img src="images/Screen Shot 2023-09-07 at 4.39.21 PM.png"/>
 
-=======
->>>>>>> origin/master
 
 ## Room for Improvement
 1. Adding multiple city/state municipalities DOT listings.
@@ -148,11 +126,7 @@ instance using publicly available Twitter training data from Silicon Valley and 
 7. Rename to DopeyWins.
 8. Migrate KimK mentions to prior versioning.
 9. Create and integrate a SQL database.
-<<<<<<< HEAD
 10. Clean up code for multi-environment access.
-=======
-10. Clean up code for multi-environment access. 
->>>>>>> origin/master
 11. Upgrade code for cloud deployment.
 12. Upgrade code for Black[d] linting.
 13. Upgrade codebase for user selectable state and DOT districts.
@@ -166,15 +140,4 @@ Give credit here.
 
 
 ## Contact
-<<<<<<< HEAD
 Created by [@datatalking](datatalking.github.io) - feel free to contact me!
-=======
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
->>>>>>> origin/master
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
