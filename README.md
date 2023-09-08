@@ -21,7 +21,6 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
 * [Contact](#contact)
 
 
-
 ## General Information
 - The hackathon started on Saturday morning but to me early is ontime, ontime is late and late is unacceptable. As 
   it turns out a dozen other people were asking similar questions and we met up to review the rules and make 
@@ -30,8 +29,7 @@ long term utilization is low. _demo is deprecated_ [API shutdown](https://sea.ma
   trolling or toxic bot on twitter.
 - Our purpose was to find a way to customize boring DOT posts in context of each user preference
 - We wanted to show you don't need millions of dollars and dozens of people to rebuild a tool or customize social 
-  media experiences
-
+  media experiences.
 
 
 ## Technologies Used
@@ -96,7 +94,9 @@ has deprecated use of their free API.
 Our shared idea was expanded upon in a [2018 Paper](https://www.researchgatenet/publication/317977462_Predicting_TV_programme_audience_by_using_twitter_based_metrics) that was trained 
 using crawled data 
 from television programs
-<img src="images/v2/Twitter_Kimbot/Twitter-Vigilance-Architecture.png"/>
+[<img src="images/v2/Twitter_Kimbot/Twitter-Vigilance-Architecture.png"/>]()
+
+[<img src="images/v2/Twitter_Kimbot/Twitter-Vigilance-Architecture.png" width="250"/>](Twitter-Vigilance-Architecture.png)
 
 What started as an chatbot that would imitate Kim Kardashian stalled out as 82% of her conversation were hair, 
 clothes and her butt which were not interesting. 
